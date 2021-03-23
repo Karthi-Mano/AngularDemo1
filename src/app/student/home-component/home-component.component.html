@@ -1,0 +1,25 @@
+<html>
+<table border=" 1px solid black">
+    
+        <tr>
+        <th>Name</th>
+        <th>Reg.No</th>
+        </tr>
+    
+
+    <tr *ngFor="let student of studentDetails">
+     <td>{{student.name}}</td>
+     <td>{{student.regno}}</td>
+     <td><button type="button" (click)="enter(student)">Click Me!</button></td>
+     <td><button type="button" (click)="delet(student)">Delete</button></td>
+    </tr>
+    <!-- <tr>
+        <td>Logesh</td>
+        <td>B3111153</td>
+        <td><button type="button" (click)="enter()">Click Me!</button></td>
+        <td><button type="button" (click)="delet()">Delete</button></td>
+    </tr> -->
+   
+    </table>
+    <button type="button" (click)="add()"> Add New</button>
+    <button type="button" (click)="search()"> Add New</button>

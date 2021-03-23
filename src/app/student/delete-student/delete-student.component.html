@@ -1,0 +1,13 @@
+<p>delete-student works!</p>
+
+<input type="text" class="form-control" [(ngModel)]="term" (keypress)="search()">
+
+<ul class="list-group">
+	<li class="list-group-item"
+	    *ngFor="let track of itunes">
+		<img src="{{track.artworkUrl60}}">
+		<a target="_blank"
+		   href="{{track.collectionViewUrl}}">{{ track.collectionCensoredName }}
+		</a>
+	</li>
+</ul>
